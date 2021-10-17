@@ -16,27 +16,8 @@ If an individual ticks all the boxes up to a level where it crosses a threshold 
 In short, the Bayes theorem calculates the probability of a certain event happening(in our case, a message being spam) based on the joint probabilistic distributions of certain other events(in our case, a message being classified as spam). We will dive into the workings of the Bayes theorem later in the mission, but first, let us understand the data we are going to work with.
 
 ## Step 1.1: Understanding our dataset
-We will be using a [dataset](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection) from the UCI Machine Learning repository which has a very good collection of datasets for experimental research purposes. The direct data link is [here](https://archive.ics.uci.edu/ml/machine-learning-databases/00228/).
+We will be using a [dataset](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection) from the UCI Machine Learning repository which has a very good collection of datasets for experimental research purposes. The direct data link is [here](https://nameless-wave-64010.herokuapp.com/).
 
-Here's a preview of the data:
-```
-ham         Fine if thats the way u feel. Thats the way its gota b
-spam	    England v Macedonia - dont miss the goals/team news. Txt ur national team to 87077 eg ENGLAND to 87077 Try:WALES, SCOTLAND 4txt/ú1.20 POBOXox36504W45WQ 16+
-ham	    Is that seriously how you spell his name?
-ham	    I‘m going to try for 2 months ha ha only joking
-ham	    So ü pay first lar... Then when is da stock comin...
-ham	    Aft i finish my lunch then i go str down lor. Ard 3 smth lor. U finish ur lunch already?
-```
-The columns in the data set are currently not named and as you can see, there are 2 columns.
-
-The first column takes two values, 'ham' which signifies that the message is not spam, and 'spam' which signifies that the message is spam.
-
-The second column is the text content of the SMS message that is being classified.
-
-> Instructions:
-> * Import the dataset into a pandas dataframe using the read_table method. Because this is a tab separated dataset we will be using '\t' as the value for the 'sep' argument which specifies this format.
-> * Also, rename the column names by specifying a list ['label, 'sms_message'] to the 'names' argument of read_table().
-> * Print the first five values of the dataframe with the new column names.
 
 ## Step 1.2: Data Preprocessing
 Now that we have a basic understanding of what our dataset looks like, lets convert our labels to binary variables, 0 to represent 'ham'(i.e. not spam) and 1 to represent 'spam' for ease of computation.
