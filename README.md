@@ -15,7 +15,7 @@ If an individual ticks all the boxes up to a level where it crosses a threshold 
 
 In short, the Bayes theorem calculates the probability of a certain event happening(in our case, a message being spam) based on the joint probabilistic distributions of certain other events(in our case, a message being classified as spam). We will dive into the workings of the Bayes theorem later in the mission, but first, let us understand the data we are going to work with.
 
-## Step 1.1: Understanding our dataset
+## Step 1.1:Dataset
 We will be using a [dataset](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection) from the UCI Machine Learning repository which has a very good collection of datasets for experimental research purposes. The direct data link is [here](https://nameless-wave-64010.herokuapp.com/).
 
 
